@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/control_snake_game/static/css/main.073c9b0a.css",
-    "main.js": "/control_snake_game/static/js/main.6c2329f5.js",
+    "main.js": "/control_snake_game/static/js/main.3b21e7fa.js",
     "index.html": "/control_snake_game/index.html",
     "main.073c9b0a.css.map": "/control_snake_game/static/css/main.073c9b0a.css.map",
-    "main.6c2329f5.js.map": "/control_snake_game/static/js/main.6c2329f5.js.map"
+    "main.3b21e7fa.js.map": "/control_snake_game/static/js/main.3b21e7fa.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.6c2329f5.js"
+    "static/js/main.3b21e7fa.js"
   ]
 }

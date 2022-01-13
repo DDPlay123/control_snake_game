@@ -195,7 +195,7 @@ function App() {
   // Main function
   const runObjectDetection = async() => {
     // load model
-    const model = await tf.loadGraphModel('https://raw.githubusercontent.com/DDPlay123/TFJS_model/main/All_model/tensorflow_JS/Original_Dataset_x13/model.json');
+    const model = await tf.loadGraphModel('https://raw.githubusercontent.com/DDPlay123/TFJS_model/main/All_model/tensorflow_JS/Original_Dataset_x17/TFJS/model.json');
     // loop and detect hands
     setInterval(() => {detect(model);}, 0);
   }
@@ -223,10 +223,10 @@ function App() {
       const expanded = casted.expandDims(0)
       const obj = await model.executeAsync(expanded)
 
-      //console.log(await obj[7].array())
+      console.log(await obj[7].array())
 
-      const boxes = await obj[3].array()
-      const classes = await obj[6].array()
+      const boxes = await obj[0].array()
+      const classes = await obj[2].array()
       const scores = await obj[7].array()
       // Draw mesh
       const ctx = canvasRef.current.getContext("2d");
